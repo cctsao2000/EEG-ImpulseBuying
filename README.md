@@ -14,7 +14,7 @@ The preprocessing procedures includes:
 2. Baseline normalization -- src/eeg_norm.py
 3. 5-second epoch extraction -- src/ana_*.py
 
-We retrieved the EEG signals of planned buying to serve as the baseline and calculated the power variations resulted from the impulsive buying behavior. 
+We retrieved the EEG signals of planned buying to serve as the baseline and calculated the power variations resulted from the impulsive buying behavior under different situations. 
 
 We compared participants' brain activities between buying:
 - Unplanned item (Impulsive Buying Behavior) vs. Reject unplanned item (No Impusive Buying Behavior) -- src/ana_ibnib.py
