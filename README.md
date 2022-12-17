@@ -12,10 +12,13 @@ We use EMOTIV EPOC X to collect participant’s brainwave. Among the 14 channels
 The preprocessing procedures includes: 
 1. FFT band powers calculation -- EmotivPRO
 2. Baseline normalization -- src/eeg_norm.py
-3. 5-second epoch extraction -- src/eeg_[analysis].py
+3. 5-second epoch extraction -- src/ana_*.py
 
 We retrieved the EEG signals of planned buying to serve as the baseline and calculated the power variations resulted from the impulsive buying behavior. 
 
-We compared the brain activities between:
-- Impulsive Buying vs. Non-Impulsive Buying
-- 
+We compared participants' brain activities between buying:
+- Unplanned item (Impulsive Buying Behavior) vs. Reject unplanned item (No Impusive Buying Behavior) -- src/ana_ibnib.py
+- Discount vs. Limited Edition/Quantity -- src/ana_disedi.py 
+- Regretted vs. Unregretted -- src/ana_regret.py 
+- Related add-on vs. Unrelated add-on -- src/ana_relurel.py 
+- Before robot recommendation vs. After robot recommendation -- src/ana_barobot.py 

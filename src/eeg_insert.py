@@ -1,7 +1,7 @@
 import glob,os
 import pandas as pd
 import numpy as np
-
+# this code is for inserting new events after data collection
 def get_events(id):
     log_df = pd.read_csv(f'../log-related/{id}.csv')
     log_np = log_df.to_numpy()
