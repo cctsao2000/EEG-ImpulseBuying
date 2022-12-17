@@ -7,7 +7,7 @@ The initial results show that marketing strategies and robot recommendations can
 ---
 We use EMOTIV EPOC X to collect participant’s brainwave. Among the 14 channels, we focus on the eight electrodes (AF3, F7, AF4, F8, F3, FC5, FC6, and F4) placed in the frontal cortex to capture cognitive-related brain activities.
 
-### Data Analysis Pipeline
+### Data Analysis
 ---
 The preprocessing procedures includes: 
 1. FFT band powers calculation -- EmotivPRO
@@ -22,3 +22,5 @@ We compared participants' brain activities between buying:
 - Regretted vs. Unregretted -- src/ana_regret.py 
 - Related add-on vs. Unrelated add-on -- src/ana_relurel.py 
 - Before robot recommendation vs. After robot recommendation -- src/ana_barobot.py 
+
+We use EEGLAB to plot the topographic map. -- src/vis_band.m 
