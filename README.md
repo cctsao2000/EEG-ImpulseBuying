@@ -10,11 +10,9 @@ We use EMOTIV EPOC X to collect participant’s brainwave. Among the 14 channels
 ### Data Analysis Pipeline
 ---
 The preprocessing procedures includes: 
-1. FFT band powers calculation
-    > EmotivPRO
-2. Baseline normalization
-    >
-3. 5-second epoch extraction
+1. FFT band powers calculation -- EmotivPRO
+2. Baseline normalization -- src/eeg_norm.py
+3. 5-second epoch extraction -- src/eeg_[analysis].py
 
 We retrieved the EEG signals of planned buying to serve as the baseline and calculated the power variations resulted from the impulsive buying behavior. 
 
